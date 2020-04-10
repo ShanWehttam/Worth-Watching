@@ -7,41 +7,189 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style type="text/css">
+
     body {
-        background-color: #f0f0f2;
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    div {
-        width: 600px;
-        margin: 5em auto;
-        padding: 2em;
-        background-color: #fdfdff;
-        border-radius: 0.5em;
-        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+
+    .nav {
+      color: #ff5050;
+      margin: auto;
+      width: 50%;
+      max-width: 50%;
     }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    .nav ul li {
+      display: flex;
+      margin: 2%;
+      color: #ff5050;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .nav ul li a {
+      padding-bottom: 1px;
+      font-weight: bold;
+      border-bottom: 2px solid #cc0000;
+      text-align: center;
+    }
+
     a:link, a:visited {
-        color: #38488f;
-        text-decoration: none;
+      color: #ff5050;
+      text-decoration: none;
     }
-    @media (max-width: 700px) {
+    /* @media (max-width: 700px) {
         div {
             margin: 0 auto;
             width: auto;
         }
+    } */
+
+    h1 {
+      color: #ff5050;
+    text-align: Center;
+      font-family: 'Shadows Into Light', cursive;
+        margin-bottom: 0;
     }
+
+    h2 {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    margin-left: 1rem;
+    }
+
+    p {
+      color: #ff5050;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    .ipl-rating-star__star {
+      display: inline;
+      fill: #c39400;
+      /* height: 1.35em;
+      width: 1.35em; */
+    }
+
+    div {
+        margin-left: 1rem;
+    }
+
+    hr{
+        height: 1px;
+    border: 0;
+    border-top: 1px solid #E8E8E8;
+    margin: 5px 3px 0 0;
+    }
+span{
+    color: white;
+}
+
+.ratingValue {
+
+}
+
+    *  {
+       box-sizing: border-box; 
+    }  
     </style>    
 </head>
-
 <body>
-<div>
-    <h1>Example Domainnnnnnnnnnnnnnn</h1>
-    <p>This domain is for use in illustrative examples in documents. You may use this
-    domain in literature without prior coordination or asking for permission.</p>
-    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
-</div>
-</body>
-</html>
+
+    <div class="nav">
+        <ul>
+          <li><a href="#">BBC Iplayer</a></li>
+          <li><a href="#">Terrestrial</a></li>
+          <li><a href="#">NETFLIX</a></li>
+        </ul>
+      </div>
+
+
+      <h1>Worth Watching
+        <span>
+          <svg viewBox="0 0 25 25" 
+               width="35" 
+               height="35" 
+               stroke="#A16736" 
+               stroke-width="2.5" 
+               stroke-linecap="round" 
+               stroke-linejoin="round" 
+               shape-rendering="geometricPrecision" >
+               <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><path d="M17 2l-5 5-5-5" stroke-width="1.2" stroke="grey"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p>Streamline your Screentime</p>
+
+      <hr>
+    <h2 class="">Titanic</h2>
+    <div class="ratingValue">
+            <span title="Channel">Channel</span>
+            <span class="ghost">|</span>
+            <span title="start time">starting time</span>              
+            <span class="ghost">|</span>
+            <svg class="ipl-rating-star__star  " xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 -3.5 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+            </svg>
+            <strong>
+                <span itemprop="ratingValue">7.8</span>
+            </strong>
+            <span class="grey">/
+            </span>
+            <span class="grey" itemprop="bestRating">10
+            </span>
+            <span class="ghost">|</span>
+        </div>
+
+        <hr>
+        <h2 class="">Titanic</h2>
+        <div class="ratingValue">
+                <span title="Channel">Channel</span>
+                <span class="ghost">|</span>
+                <span title="start time">starting time</span>              
+                <span class="ghost">|</span>
+                <svg class="ipl-rating-star__star  " xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 -3.5 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+                <strong>
+                    <span itemprop="ratingValue">7.8</span>
+                </strong>
+                <span class="grey">/
+                </span>
+                <span class="grey" itemprop="bestRating">10
+                </span>
+                <span class="ghost">|</span>
+            </div>
+
+
+  </body>
+  </html>
+
